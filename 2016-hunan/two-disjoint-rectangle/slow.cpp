@@ -5,7 +5,7 @@
 
 const int MOD = 1e9 + 7;
 
-bool valid(const std::vector<std::vector<int>>& sum, int x1, int x2, int y1, int y2)
+bool valid(const std::vector<std::vector<int> >& sum, int x1, int x2, int y1, int y2)
 {
     x2 ++;
     y2 ++;
@@ -21,11 +21,11 @@ int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
-        std::vector<std::vector<char>> board(n, std::vector<char>(m + 1));
+        std::vector<std::vector<char> > board(n, std::vector<char>(m + 1));
         for (int i = 0; i < n; ++ i) {
             scanf("%s", board[i].data());
         }
-        std::vector<std::vector<int>> sum(n + 1, std::vector<int>(m + 1));
+        std::vector<std::vector<int> > sum(n + 1, std::vector<int>(m + 1));
         for (int i = n - 1; i >= 0; -- i) {
             for (int j = m - 1; j >= 0; -- j) {
                 sum[i][j] = board[i][j] == '1';

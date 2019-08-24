@@ -3,7 +3,7 @@
 #include <bits/stdc++.h>
 
 std::vector<int> cur;
-std::vector<std::vector<int>> sequences;
+std::vector<std::vector<int> > sequences;
 
 void dfs(int n, int i)
 {

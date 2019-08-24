@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
     for (int i = 0; i < result; ++ i) {
         marked[vertices[i]] = true;
     }
-    std::vector <std::pair <int, int>> edges;
+    std::vector <std::pair <int, int> > edges;
     for (int i = 0; i < k; ++ i) {
         for (int j = i + 1; j < n; ++ j) {
             if (marked[i] || marked[j]) {

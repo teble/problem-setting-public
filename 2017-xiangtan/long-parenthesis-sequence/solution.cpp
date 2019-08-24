@@ -10,7 +10,7 @@ int main()
     int n;
     while (scanf("%d", &n) == 1) {
         long long result = 0;
-        std::vector<std::pair<int, int>> segments;
+        std::vector<std::pair<int, int> > segments;
         for (int i = 0; i < n; ++ i) {
             char buffer[2];
             int length, cost;
@@ -22,7 +22,7 @@ int main()
                 segments.emplace_back(length, cost);
             }
         }
-        std::priority_queue<std::pair<int, int>> queue;
+        std::priority_queue<std::pair<int, int> > queue;
         int length = 0;
         for (auto&& segment : segments) {
             queue.emplace(-segment.second, segment.first);

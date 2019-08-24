@@ -60,7 +60,7 @@ int main()
         for (int i = 0; i < m; ++ i) {
             scanf("%d", &b.at(i));
         }
-        std::vector<std::vector<int>> dp(m, std::vector<int>(m + 2));
+        std::vector<std::vector<int> > dp(m, std::vector<int>(m + 2));
         for (int i = 0; i < m; ++ i) {
             for (int o = 0; o <= m + 1; ++ o) {
                 if (a.at(n - 1) == signum(b.at(i) - o)) {

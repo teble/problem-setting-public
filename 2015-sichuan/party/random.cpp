@@ -11,7 +11,7 @@ int main(int argc, char* argv[])
         ori[i] = rnd.next(0, 1);
         pre[i] = rnd.next(0, 2);
     }
-    std::vector <std::pair <int, int>> edges;
+    std::vector <std::pair <int, int> > edges;
     for (int i = 0; i < n; ++ i) {
         for (int j = 0; j < n; ++ j) {
             if (ori[i] != ori[j] && (pre[i] & pre[j]) == 0) {

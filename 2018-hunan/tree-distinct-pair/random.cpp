@@ -2,13 +2,13 @@
 
 #include "testlib.h"
 
-std::vector<std::pair<int, int>> random_tree(int n, int w)
+std::vector<std::pair<int, int> > random_tree(int n, int w)
 {
     std::vector<int> parent(n, -1);
     std::function<int(int)> find = [&](int u) {
         return ~parent[u] ? parent[u] = find(parent[u]) : u;
     };
-    std::vector<std::pair<int, int>> edges;
+    std::vector<std::pair<int, int> > edges;
     for (auto _ = 0; _ < n - 1; ++ _) {
         while (true) {
             auto a = rnd.next(0, n - 1);
@@ -28,7 +28,7 @@ std::vector<std::pair<int, int>> random_tree(int n, int w)
     return edges;
 }
 
-void dfs(const std::vector<std::vector<int>>& tree, std::vector<int>& parent, int& count, int p, int q, int u)
+void dfs(const std::vector<std::vector<int> >& tree, std::vector<int>& parent, int& count, int p, int q, int u)
 {
     parent[count] = q;
     q = count ++;
@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
     int m = std::atoi(argv[4]);
     while (T --) {
         printf("%d\n", n);
-        std::vector<std::vector<int>> tree(n);
+        std::vector<std::vector<int> > tree(n);
         for (auto&& e : random_tree(n, w)) {
             tree[e.first].push_back(e.second);
             tree[e.second].push_back(e.first);

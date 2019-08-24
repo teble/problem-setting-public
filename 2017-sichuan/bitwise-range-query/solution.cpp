@@ -17,7 +17,7 @@ int main()
     while (scanf("%d%d%d%d%d", &n, &m, &a, &b, &q) == 5) {
         assert(m < M);
         uint64_t flip = 0, add = 0, clear = 0;
-        std::vector<std::pair<int, int>> events;
+        std::vector<std::pair<int, int> > events;
         events.emplace_back(0, -1);
         for (int i = 0; i < q; ++ i) {
             int l, r, w;

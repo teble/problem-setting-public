@@ -13,7 +13,7 @@ int main()
         for (int i = 0; i < n; ++ i) {
             scanf("%d", &a.at(i));
         }
-        std::vector<std::vector<int>> tree(n);
+        std::vector<std::vector<int> > tree(n);
         for (int i = 0; i < n - 1; ++ i) {
             int a, b;
             scanf("%d%d", &a, &b);

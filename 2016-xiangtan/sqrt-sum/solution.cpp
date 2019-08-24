@@ -5,10 +5,10 @@
 #include <utility>
 #include <vector>
 
-std::vector<std::pair<int, int>> group(std::vector<int> a)
+std::vector<std::pair<int, int> > group(std::vector<int> a)
 {
     std::sort(a.begin(), a.end());
-    std::vector<std::pair<int, int>> groups;
+    std::vector<std::pair<int, int> > groups;
     int n = a.size();
     for (int i = 0; i < n; ) {
         int j = i;

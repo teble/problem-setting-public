@@ -39,7 +39,7 @@ struct Solver
     int n;
     std::vector<int> a, count, contrib;
     std::vector<long long> result;
-    std::vector<std::vector<int>> children;
+    std::vector<std::vector<int> > children;
 };
 
 

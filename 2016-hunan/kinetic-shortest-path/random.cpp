@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
     int n = std::atoi(argv[1]);
     int m = std::atoi(argv[2]);
     int w = std::atoi(argv[3]);
-    std::vector<std::pair<int, int>> edges;
+    std::vector<std::pair<int, int> > edges;
     for (int i = 0; i < n; ++ i) {
         for (int j = 0; j < n; ++ j) {
             if (i != j && rnd.wnext(0, 1, w)) {

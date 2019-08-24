@@ -6,7 +6,7 @@ int main(int argc, char* argv[])
     int n = std::atoi(argv[1]);
     int m = std::atoi(argv[2]);
     int w = std::atoi(argv[3]);
-    std::vector<std::pair<int, int>> edges;
+    std::vector<std::pair<int, int> > edges;
     if (rnd.next(0, 1)) {
         for (int i = 1; i < n; ++ i) {
             edges.emplace_back(i, i + 1);

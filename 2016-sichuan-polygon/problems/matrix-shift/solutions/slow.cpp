@@ -7,7 +7,7 @@ int main()
     int n, q;
     scanf("%d%d", &n, &q);
     int m = n;
-    std::vector<std::vector<int>> state(n);
+    std::vector<std::vector<int> > state(n);
     for (int i = 0; i < n; ++ i) {
         for (int j = 0; j < m; ++ j) {
             state[i].push_back(i * m + j);

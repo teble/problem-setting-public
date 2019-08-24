@@ -3,13 +3,13 @@
 #include <functional>
 #include <vector>
 
-std::vector<std::pair<int, int>> random_tree(int n, int w)
+std::vector<std::pair<int, int> > random_tree(int n, int w)
 {
     std::vector<int> parent(n, -1);
     std::function<int(int)> find = [&](int u) {
         return ~parent[u] ? parent[u] = find(parent[u]) : u;
     };
-    std::vector<std::pair<int, int>> edges;
+    std::vector<std::pair<int, int> > edges;
     for (auto _ = 0; _ < n - 1; ++ _) {
         while (true) {
             auto a = rnd.next(0, n - 1);
@@ -32,7 +32,7 @@ std::vector<std::pair<int, int>> random_tree(int n, int w)
 int main(int argc, char* argv[])
 {
     registerGen(argc, argv, 1);
-    std::vector<std::tuple<int, int, int>> params;
+    std::vector<std::tuple<int, int, int> > params;
     for (int i = 1; i + 3 < argc; i += 4) {
         auto c = std::atoi(argv[i]);
         auto n = std::atoi(argv[i + 1]);

@@ -6,7 +6,7 @@
 int main(int argc, char* argv[])
 {
     registerGen(argc, argv, 1);
-    std::vector<std::tuple<int, int>> params;
+    std::vector<std::tuple<int, int> > params;
     for (int i = 1; i + 2 < argc; i += 3) {
         auto c = std::atoi(argv[i]);
         auto n = std::atoi(argv[i + 1]);
@@ -19,7 +19,7 @@ int main(int argc, char* argv[])
         int n = std::get<0>(param);
         int q = std::get<1>(param);
         int m = rnd.next(1, n * (n - 1) / 2);
-        std::vector<std::pair<int, int>> edges;
+        std::vector<std::pair<int, int> > edges;
         for (int i = 0; i < n; ++ i) {
             for (int j = i + 1; j < n; ++ j) {
                 edges.emplace_back(i, j);

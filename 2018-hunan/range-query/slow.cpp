@@ -4,7 +4,7 @@ int main()
 {
     int n, q;
     while (scanf("%d%d", &n, &q) == 2) {
-        std::vector<std::pair<int, int>> itvs;
+        std::vector<std::pair<int, int> > itvs;
         while (q --) {
             int t, l, r;
             scanf("%d%d%d", &t, &l, &r);

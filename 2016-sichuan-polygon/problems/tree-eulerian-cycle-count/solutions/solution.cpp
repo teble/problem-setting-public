@@ -14,7 +14,7 @@ int main()
 {
     int n;
     scanf("%d", &n);
-    std::vector<std::vector<std::pair<int, int>>> tree(n);
+    std::vector<std::vector<std::pair<int, int> > > tree(n);
     int m = 0;
     for (int i = 0; i < n - 1; ++ i) {
         int a, b, c;

@@ -4,7 +4,7 @@
 #include <utility>
 #include <vector>
 
-using Tree = std::vector<std::vector<std::pair<int, int>>>;
+using Tree = std::vector<std::vector<std::pair<int, int> > >;
 using LL = long long;
 
 std::vector<LL> bfs(int n, const Tree& tree, int s)

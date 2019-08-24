@@ -6,7 +6,7 @@ int main()
 {
     int n, m, a, b;
     while (scanf("%d%d%d%d", &n, &m, &a, &b) == 4) {
-        std::vector <std::vector <int>> floyd(n, std::vector <int>(n, b));
+        std::vector <std::vector <int> > floyd(n, std::vector <int>(n, b));
         for (int i = 0; i < m; ++ i) {
             int x, y;
             scanf("%d%d", &x, &y);

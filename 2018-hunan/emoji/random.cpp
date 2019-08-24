@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
             }
         }
         shuffle(order.begin(), order.end());
-        std::vector<std::vector<char>> map(n, std::vector<char>(m + 1, '\0'));
+        std::vector<std::vector<char> > map(n, std::vector<char>(m + 1, '\0'));
         for (int i = 0; i < n; ++ i) {
             for (int j = 0; j < m; ++ j) {
                 map[i][j] = "<>^v"[rnd.next(0, 3)];

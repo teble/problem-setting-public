@@ -65,7 +65,7 @@ int main()
             tree[b].push_back(a);
         }
         prepare(-1, 0);
-        std::vector<std::pair<int, int>> order;
+        std::vector<std::pair<int, int> > order;
         for (int i = 0; i < n; ++ i) {
             order.emplace_back(depth[i], i);
         }

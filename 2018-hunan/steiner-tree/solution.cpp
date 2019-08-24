@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 
 template<typename T>
-using PQ = std::priority_queue<T, std::vector<T>, std::greater<T>>;
+using PQ = std::priority_queue<T, std::vector<T>, std::greater<T> >;
 
 void update(int& x, int a)
 {
@@ -20,8 +20,8 @@ int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
-        std::vector<std::vector<std::pair<int, int>>> graph(n);
-        std::vector<std::pair<int, std::pair<int, int>>> edges;
+        std::vector<std::vector<std::pair<int, int> > > graph(n);
+        std::vector<std::pair<int, std::pair<int, int> > > edges;
         for (int i = 0, a, b, c; i < m; ++ i) {
             scanf("%d%d%d", &a, &b, &c);
             a --, b --;
@@ -31,7 +31,7 @@ int main()
         }
         std::sort(edges.begin(), edges.end());
         int n2 = std::max(n >> 1, 1);
-        std::vector<std::vector<int>> dp(1 << n2, std::vector<int>(n, INT_MAX / 2));
+        std::vector<std::vector<int> > dp(1 << n2, std::vector<int>(n, INT_MAX / 2));
         for (int i = 0; i < n2; ++ i) {
             dp[1 << i][i] = 0;
         }
@@ -42,7 +42,7 @@ int main()
                 }
             }
             auto& dist = dp[msk];
-            PQ<std::pair<int, int>> pq;
+            PQ<std::pair<int, int> > pq;
             for (int i = 0; i < n; ++ i) {
                 pq.emplace(dist[i], i);
             }

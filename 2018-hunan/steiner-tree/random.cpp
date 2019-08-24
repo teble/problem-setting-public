@@ -2,13 +2,13 @@
 
 #include "testlib.h"
 
-std::set<std::pair<int, int>> random_graph(int n, int m)
+std::set<std::pair<int, int> > random_graph(int n, int m)
 {
     std::vector<int> parent(n, -1);
     std::function<int(int)> find = [&](int u) {
         return ~parent[u] ? parent[u] = find(parent[u]) : u;
     };
-    std::set<std::pair<int, int>> edges;
+    std::set<std::pair<int, int> > edges;
     for (auto _ = 0; _ < n - 1; ++ _) {
         while (true) {
             auto a = rnd.next(0, n - 1);
@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
     int n = std::atoi(argv[1]);
     int m = rnd.next(n - 1, n * (n - 1) / 2);
     int w = std::atoi(argv[2]);
-    std::vector<std::pair<int, int>> edges;
+    std::vector<std::pair<int, int> > edges;
     for (auto&& e : random_graph(n, m)) {
         edges.push_back(e);
     }

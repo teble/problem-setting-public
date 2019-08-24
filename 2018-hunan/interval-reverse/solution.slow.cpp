@@ -10,7 +10,7 @@ int main() {
             scanf("%d%d", &a[i], &b[i]);
             a[i]--;
         }
-        std::vector<std::tuple<int, int, int>> queries;
+        std::vector<std::tuple<int, int, int> > queries;
         for (int i = 0, t; i < q; ++i) {
             scanf("%d", &t);
             t--;

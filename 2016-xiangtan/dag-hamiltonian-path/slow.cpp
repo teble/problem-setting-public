@@ -13,7 +13,7 @@ int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
-        std::vector<std::vector<int>> graph(n, std::vector<int>(n, -1));
+        std::vector<std::vector<int> > graph(n, std::vector<int>(n, -1));
         std::vector<int> best(n, -1);
         for (int _ = 0; _ < m; ++ _) {
             int a, b, c;

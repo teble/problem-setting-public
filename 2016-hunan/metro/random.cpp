@@ -21,9 +21,9 @@ std::pair<int, int> generate_pair(int n, int w)
     return {a, (a + d) % n};
 }
 
-std::vector<std::pair<int, int>> generate(int n, int m, int w)
+std::vector<std::pair<int, int> > generate(int n, int m, int w)
 {
-    std::vector<std::pair<int, int>> graph;
+    std::vector<std::pair<int, int> > graph;
     std::vector<int> parent(n);
     std::iota(parent.begin(), parent.end(), 0);
     int a, b;

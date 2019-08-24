@@ -19,7 +19,7 @@ int main()
                 inf.readEoln();
             }
         }
-        std::set<std::pair<int, int>> edges;
+        std::set<std::pair<int, int> > edges;
         for (int i = 0; i < m; ++ i) {
             int a = inf.readInt(1, n);
             inf.readSpace();

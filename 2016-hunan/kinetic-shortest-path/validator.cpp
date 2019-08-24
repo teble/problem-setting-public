@@ -9,8 +9,8 @@ int main()
     inf.readSpace();
     inf.readInt(1, 10000);
     inf.readEoln();
-    std::vector<std::set<int>> edges(n);
-    std::vector<std::vector<bool>> graph(n, std::vector<bool>(n));
+    std::vector<std::set<int> > edges(n);
+    std::vector<std::vector<bool> > graph(n, std::vector<bool>(n));
     for (int _ = 0; _ < m; ++ _) {
         int a = inf.readInt(1, n) - 1;
         inf.readSpace();

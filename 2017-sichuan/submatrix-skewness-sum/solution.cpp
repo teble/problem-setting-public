@@ -16,7 +16,7 @@ int main()
 {
     int n;
     while (scanf("%d", &n) == 1) {
-        std::vector<std::vector<int>> a(n + 1, std::vector<int>(n + 1));
+        std::vector<std::vector<int> > a(n + 1, std::vector<int>(n + 1));
         for (int i = 0; i < n; ++ i) {
             for (int j = 0; j < n; ++ j) {
                 scanf("%d", &a.at(i).at(j));

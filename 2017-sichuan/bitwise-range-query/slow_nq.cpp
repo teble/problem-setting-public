@@ -11,7 +11,7 @@ int main()
     int n, m, a, b, q;
     while (scanf("%d%d%d%d%d", &n, &m, &a, &b, &q) == 5) {
         std::vector<int> weight(q);
-        std::vector<std::pair<int, int>> lefts(q), rights(q);
+        std::vector<std::pair<int, int> > lefts(q), rights(q);
         for (int i = 0; i < q; ++ i) {
             scanf("%d%d%d", &lefts.at(i).first, &rights.at(i).first, &weight.at(i));
             lefts.at(i).first --;

@@ -12,7 +12,7 @@ int main()
 {
     int n, m;
     scanf("%d%d", &n, &m);
-    std::vector<std::pair<int, int>> groupons;
+    std::vector<std::pair<int, int> > groupons;
     for (int _ = 0; _ < m; ++ _) {
         int c, k;
         scanf("%d%d", &c, &k);

@@ -10,7 +10,7 @@ int main()
 {
     int n, m, a, b;
     while (scanf("%d%d%d%d", &n, &m, &a, &b) == 4) {
-        std::vector <std::vector <int>> graph(n);
+        std::vector <std::vector <int> > graph(n);
         for (int i = 0; i < m; ++ i) {
             int a, b;
             scanf("%d%d", &a, &b);

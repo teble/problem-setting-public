@@ -12,7 +12,7 @@ int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
-        std::vector<std::pair<int, std::pair<int, int>>> edges;
+        std::vector<std::pair<int, std::pair<int, int> > > edges;
         for (int i = 0, a, b, c; i < m; ++ i) {
             scanf("%d%d%d", &a, &b, &c);
             a --, b --;

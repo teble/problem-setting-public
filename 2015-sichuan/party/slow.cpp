@@ -6,7 +6,7 @@
 const int N = 1000;
 
 int n, w[N], p[N], c[N], result;
-std::vector <std::vector <int>> graph;
+std::vector <std::vector <int> > graph;
 
 void dfs(int i, int sum)
 {

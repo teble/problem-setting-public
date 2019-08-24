@@ -2,13 +2,13 @@
 
 #include "testlib.h"
 
-std::vector<std::pair<int, int>> random_tree(int n, int w)
+std::vector<std::pair<int, int> > random_tree(int n, int w)
 {
     std::vector<int> parent(n, -1);
     std::function<int(int)> find = [&](int u) {
         return ~parent[u] ? parent[u] = find(parent[u]) : u;
     };
-    std::vector<std::pair<int, int>> edges;
+    std::vector<std::pair<int, int> > edges;
     for (auto _ = 0; _ < n - 1; ++ _) {
         while (true) {
             auto a = rnd.next(0, n - 1);

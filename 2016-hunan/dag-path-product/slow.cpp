@@ -4,7 +4,7 @@
 
 const int MOD = (int)1e9 + 7;
 
-typedef std::vector<std::vector<int>> Graph;
+typedef std::vector<std::vector<int> > Graph;
 
 void update(int& x, int a)
 {

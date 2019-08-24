@@ -8,7 +8,7 @@ int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
-        std::vector<std::pair<int, int>> a(n);
+        std::vector<std::pair<int, int> > a(n);
         for (int i = 0; i < n; ++ i) {
             scanf("%d%d", &a.at(i).first, &a.at(i).second);
         }

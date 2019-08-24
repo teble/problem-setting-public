@@ -10,7 +10,7 @@ int inv(int a)
     return a == 1 ? 1 : (long long)(MOD - MOD / a) * inv(MOD % a) % MOD;
 }
 
-int inv_mat(int n, std::vector<std::vector<int>>& a) // -> det
+int inv_mat(int n, std::vector<std::vector<int> >& a) // -> det
 {
     for (int i = 0; i < n; ++ i) {
         for (int j = 0; j < n; ++ j) {
@@ -60,7 +60,7 @@ int main()
 {
     int n;
     while (scanf("%d", &n) == 1) {
-        std::vector<std::vector<int>> a(n, std::vector<int>(n));
+        std::vector<std::vector<int> > a(n, std::vector<int>(n));
         for (int i = 0; i < n; ++ i) {
             for (int j = 0; j < n; ++ j) {
                 scanf("%d", &a.at(i).at(j));

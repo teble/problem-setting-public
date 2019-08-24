@@ -8,7 +8,7 @@ int main()
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
         std::vector<int> a(m), b(m), c(m);
-        std::vector<std::vector<int>> graph(n, std::vector<int>(n));
+        std::vector<std::vector<int> > graph(n, std::vector<int>(n));
         for (int i = 0; i < m; ++ i) {
             scanf("%d%d%d", &a.at(i), &b.at(i), &c.at(i));
             a.at(i) --;

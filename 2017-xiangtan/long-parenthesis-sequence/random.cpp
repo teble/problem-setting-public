@@ -6,7 +6,7 @@
 int main(int argc, char* argv[])
 {
     registerGen(argc, argv, 1);
-    std::vector<std::pair<int, int>> params;
+    std::vector<std::pair<int, int> > params;
     int w = std::atoi(argv[1]);
     for (int i = 2; i + 2 < argc; i += 3) {
         auto c = std::atoi(argv[i]);

@@ -31,7 +31,7 @@ int main()
             }
             return 1 <= values.at(i) && values.at(i) <= max;
         };
-        std::vector<std::vector<int>> nxt(n + 1, std::vector<int>(m + 1));
+        std::vector<std::vector<int> > nxt(n + 1, std::vector<int>(m + 1));
         nxt.at(n).assign(m + 1, n);
         for (int i = n - 1; i >= 0; -- i) {
             nxt.at(i) = nxt.at(i + 1);

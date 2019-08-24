@@ -14,7 +14,7 @@ int main()
 {
     int n, m, q;
     while (scanf("%d%d%d", &n, &m, &q) == 3) {
-        std::vector<std::vector<int>> graph(n);
+        std::vector<std::vector<int> > graph(n);
         for (int i = 0; i < m; ++ i) {
             int a, b;
             scanf("%d%d", &a, &b);

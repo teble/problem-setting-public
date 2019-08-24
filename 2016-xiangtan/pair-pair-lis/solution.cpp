@@ -10,7 +10,7 @@ bool cmp(int x, int y)
     return x < y;
 }
 
-int get_sum(const std::vector<std::vector<int>>& sum, const std::pair<int, int>& x_range, const std::pair<int, int>& y_range)
+int get_sum(const std::vector<std::vector<int> >& sum, const std::pair<int, int>& x_range, const std::pair<int, int>& y_range)
 {
     int x0, x1, y0, y1;
     std::tie(x0, x1) = x_range;
@@ -41,8 +41,8 @@ int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
-        std::vector<std::vector<std::vector<int>>> sum(2, std::vector<std::vector<int>>(m + 1, std::vector<int>(m + 1)));
-        std::vector<std::vector<int>> a(n);
+        std::vector<std::vector<std::vector<int> > > sum(2, std::vector<std::vector<int> >(m + 1, std::vector<int>(m + 1)));
+        std::vector<std::vector<int> > a(n);
         for (int i = 0; i < n; ++ i) {
             int x, y;
             scanf("%d%d", &x, &y);

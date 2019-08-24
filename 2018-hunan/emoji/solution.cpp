@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 
-using Map = std::vector<std::vector<char>>;
+using Map = std::vector<std::vector<char> >;
 
 int solve(Map& g, int n, int m, char up, char down)
 {

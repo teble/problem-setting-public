@@ -10,7 +10,7 @@ int main()
     std::ios::sync_with_stdio(false);
     int n, m, l;
     scanf("%d%d", &n, &m);
-    std::vector<std::vector<int>> graph(n);
+    std::vector<std::vector<int> > graph(n);
     for (int _ = 0; _ < m; ++ _) {
         int a, b;
         scanf("%d%d", &a, &b);

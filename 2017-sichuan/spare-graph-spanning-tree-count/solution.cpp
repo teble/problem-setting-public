@@ -20,7 +20,7 @@ int inv(int a)
     return a == 1 ? 1 : 1LL * (MOD - MOD / a) * inv(MOD % a) % MOD;
 }
 
-int det(std::vector<std::vector<int>>& mat, int n)
+int det(std::vector<std::vector<int> >& mat, int n)
 {
     int result = 1;
     for (int j = 0; j < n; ++ j) {
@@ -56,7 +56,7 @@ int main()
             scanf("%d", &ends.at(i));
             ends.at(i) --;
         }
-        std::vector<std::vector<int>> graph(n);
+        std::vector<std::vector<int> > graph(n);
         for (int i = 0; i < m << 1; ++ i) {
             graph.at(ends.at(i ^ 1)).push_back(i);
         }
@@ -100,7 +100,7 @@ int main()
         }
         debug("degree\n");
         int multiplier = 1;
-        std::vector<std::vector<int>> laplacian(nn, std::vector<int>(nn));
+        std::vector<std::vector<int> > laplacian(nn, std::vector<int>(nn));
         for (int s = 0; s < n; ++ s) {
             if (~new_label.at(s)) {
                 for (auto&& se : graph.at(s)) {

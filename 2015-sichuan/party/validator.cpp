@@ -3,7 +3,7 @@
 #include <vector>
 #include <queue>
 
-bool bipartite(std::vector <std::vector <int>> edges)
+bool bipartite(std::vector <std::vector <int> > edges)
 {
     int n = edges.size();
     std::vector <int> color(n, -1);
@@ -53,7 +53,7 @@ int main()
             inf.readEoln();
         }
     }
-    std::vector <std::vector <int>> edges(n);
+    std::vector <std::vector <int> > edges(n);
     for (int i = 0; i < m; ++ i) {
         int a = inf.readInt(1, n) - 1;
         inf.readSpace();

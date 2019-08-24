@@ -21,13 +21,13 @@ int main()
 {
     int n;
     while (scanf("%d", &n) == 1) {
-        std::vector<std::vector<int>> a(n, std::vector<int>(n));
+        std::vector<std::vector<int> > a(n, std::vector<int>(n));
         for (int i = 0; i < n; ++ i) {
             for (int j = 0; j < n; ++ j) {
                 scanf("%d", &a.at(i).at(j));
             }
         }
-        std::vector<std::vector<int>> sum(n + 1, std::vector<int>(n + 1));
+        std::vector<std::vector<int> > sum(n + 1, std::vector<int>(n + 1));
         for (int i = n - 1; i >= 0; -- i) {
             for (int j = n - 1; j >= 0; -- j) {
                 sum.at(i).at(j) = a.at(i).at(j);

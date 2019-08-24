@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
     int b = rnd.next(1, k);
     m = std::min((long long)m, (long long)n * (n - 1) / 2);
     printf("%d %d %d %d\n", n, m, a, b);
-    std::set <std::pair <int, int>> edges;
+    std::set <std::pair <int, int> > edges;
     if (m) {
         edges.insert({0, n - 1});
     }
@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
             edges.insert({a, b});
         }
     }
-    std::vector <std::pair <int, int>> pp;
+    std::vector <std::pair <int, int> > pp;
     for (const auto &it : edges) {
         pp.push_back(it);
     }

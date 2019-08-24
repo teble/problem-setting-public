@@ -26,7 +26,7 @@ int find(std::vector<int>& parent, int u)
     return parent.at(u) = find(parent, parent.at(u));
 }
 
-std::pair<int, std::vector<int>> mst(int n, const std::vector<Edge>& edges, const std::vector<int>& state)
+std::pair<int, std::vector<int> > mst(int n, const std::vector<Edge>& edges, const std::vector<int>& state)
 {
     int result = 0;
     std::vector<int> candidates;

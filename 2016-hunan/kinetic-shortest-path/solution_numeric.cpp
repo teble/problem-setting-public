@@ -13,7 +13,7 @@ int main()
 {
     int n, m, t;
     while (scanf("%d%d%d", &n, &m, &t) == 3) {
-        std::vector<std::vector<Line>> graph(n, std::vector<Line>(n, {-1, 0}));
+        std::vector<std::vector<Line> > graph(n, std::vector<Line>(n, {-1, 0}));
         for (int _ = 0; _ < m; ++ _) {
             int a, b, c, d;
             scanf("%d%d%d%d", &a, &b, &c, &d);
@@ -22,7 +22,7 @@ int main()
             graph.at(a).at(b) = {c, d};
         }
         auto shortest_path = [&](double t) {
-            std::vector<std::vector<double>> d(n, std::vector<double>(n, INF));
+            std::vector<std::vector<double> > d(n, std::vector<double>(n, INF));
             for (int i = 0; i < n; ++ i) {
                 for (int j = 0; j < n; ++ j) {
                     auto&& e = graph.at(i).at(j);

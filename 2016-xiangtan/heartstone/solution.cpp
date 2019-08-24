@@ -32,7 +32,7 @@ int main()
         }
         int result = current % MOD;
         int start = 0;
-        std::priority_queue<std::pair<int, int>> queue;
+        std::priority_queue<std::pair<int, int> > queue;
         for (int i = 0; i < n; ++ i) {
             if (a.at(i) > 0) {
                 queue.emplace(cost3(a.at(i)), a.at(i));

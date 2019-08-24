@@ -14,7 +14,7 @@ int main()
 {
     int n;
     while (scanf("%d", &n) == 1) {
-        std::vector<std::vector<LL>> graph(n, std::vector<LL>(n, INF));
+        std::vector<std::vector<LL> > graph(n, std::vector<LL>(n, INF));
         for (int i = 0; i < n - 1; ++ i) {
             int a, b, c;
             scanf("%d%d%d", &a, &b, &c);
@@ -29,7 +29,7 @@ int main()
                 }
             }
         }
-        using Edge = std::pair<int, std::pair<int, int>>;
+        using Edge = std::pair<int, std::pair<int, int> >;
         std::vector<Edge> edges;
         for (int i = 0; i < n; ++ i) {
             for (int j = i + 1; j < n; ++ j) {

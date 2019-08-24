@@ -7,7 +7,7 @@ int main(int argc, char* argv[])
     int n = std::atoi(argv[2]);
     int m = std::atoi(argv[3]);
     while (T --) {
-        std::vector<std::pair<int, int>> edges;
+        std::vector<std::pair<int, int> > edges;
         for (int i = 1; i <= n; ++ i) {
             for (int j = 1; j < i; ++ j) {
                 edges.emplace_back(j, i);

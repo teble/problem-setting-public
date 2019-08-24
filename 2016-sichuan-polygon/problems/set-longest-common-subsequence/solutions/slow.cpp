@@ -16,7 +16,7 @@ int main()
         scanf("%d", &a[i]);
         a[i] --;
     }
-    std::vector<std::vector<int>> dp(m + 1, std::vector<int>(n + 1));
+    std::vector<std::vector<int> > dp(m + 1, std::vector<int>(n + 1));
     for (int i = 0; i < m; ++ i) {
         std::vector<int> count(l);
         int k;

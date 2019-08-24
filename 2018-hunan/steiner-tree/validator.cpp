@@ -22,7 +22,7 @@ int main()
         inf.readEoln();
         std::vector<int> par(n);
         std::iota(par.begin(), par.end(), 0);
-        std::set<std::pair<int, int>> edges;
+        std::set<std::pair<int, int> > edges;
         for (int i = 0; i < m; ++ i) {
             int a = inf.readInt(1, n) - 1;
             inf.readSpace();

@@ -17,7 +17,7 @@ int main()
             for (int j = i; ~j; j = parent[j]) {
                 b.push_back(a[j]);
             }
-            std::set<std::pair<int, int>> elems;
+            std::set<std::pair<int, int> > elems;
             for (int j = 0; j < static_cast<int>(b.size()); ++ j) {
                 for (int k = 0; k < j; ++ k) {
                     elems.emplace(b[j], b[k]);

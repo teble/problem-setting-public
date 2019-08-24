@@ -14,7 +14,7 @@ int main()
         inf.readEoln();
     }
     std::vector<int> degree(n);
-    std::vector<std::vector<int>> graph(n);
+    std::vector<std::vector<int> > graph(n);
     for (int i = 0; i < m; ++ i) {
         int a = inf.readInt(1, n) - 1;
         inf.readSpace();

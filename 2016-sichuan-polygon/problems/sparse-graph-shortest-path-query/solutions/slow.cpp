@@ -6,7 +6,7 @@ int main()
 {
     int n, m, q;
     scanf("%d%d%d", &n, &m, &q);
-    std::vector<std::vector<int>> edges(n);
+    std::vector<std::vector<int> > edges(n);
     for (int _ = 0; _ < m; ++ _) {
         int a, b;
         scanf("%d%d", &a, &b);

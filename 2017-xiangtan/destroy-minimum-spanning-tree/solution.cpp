@@ -15,7 +15,7 @@ int find(std::vector<int>& parent, int u)
     return parent.at(u);
 }
 
-std::vector<int> bfs(const std::vector<std::vector<int>>& cap, int s)
+std::vector<int> bfs(const std::vector<std::vector<int> >& cap, int s)
 {
     int n = cap.size();
     std::vector<int> lv(n, -1);
@@ -35,7 +35,7 @@ std::vector<int> bfs(const std::vector<std::vector<int>>& cap, int s)
     return lv;
 }
 
-int dfs(const std::vector<int>& lv, std::vector<std::vector<int>>& cap, std::vector<int>& cur, int u, int t, int left)
+int dfs(const std::vector<int>& lv, std::vector<std::vector<int> >& cap, std::vector<int>& cur, int u, int t, int left)
 {
     if (u == t) {
         return left;
@@ -60,7 +60,7 @@ int main()
 {
     int n, m;
     while (scanf("%d%d", &n, &m) == 2) {
-        std::map<int, std::vector<std::pair<int, int>>> edges;
+        std::map<int, std::vector<std::pair<int, int> > > edges;
         for (int i = 0; i < m; ++ i) {
             int a, b, c;
             scanf("%d%d%d", &a, &b, &c);
@@ -72,7 +72,7 @@ int main()
         for (auto&& iterator : edges) {
             auto&& es = iterator.second;
             std::vector<bool> mark(n);
-            std::vector<std::vector<int>> cap(n, std::vector<int>(n));
+            std::vector<std::vector<int> > cap(n, std::vector<int>(n));
             for (auto&& e : es) {
                 auto&& a = find(parent, e.first);
                 auto&& b = find(parent, e.second);

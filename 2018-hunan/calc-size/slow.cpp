@@ -3,7 +3,7 @@
 int main()
 {
     for (int h = 1; h <= 50; ++ h) {
-        std::vector<std::vector<bool>> dp(1, {true});
+        std::vector<std::vector<bool> > dp(1, {true});
         for (int c = 1; c <= h * 10; ++ c) {
             dp.emplace_back(dp[c - 1]);
             dp.back().push_back(false);

@@ -4,7 +4,7 @@ int main(int argc, char* argv[])
 {
     registerGen(argc, argv, 1);
     int n = std::atoi(argv[1]);
-    std::vector<std::vector<int>> candidates;
+    std::vector<std::vector<int> > candidates;
     for (int a = 0; a < 7; ++ a) {
         for (int b = 0; b < 7; ++ b) {
             for (int c = 0; c < 7; ++ c) {
